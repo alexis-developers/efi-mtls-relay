@@ -1,0 +1,11 @@
+{
+    "name": "efi-mtls-relay",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": { "start": "node index.js" },
+    "dependencies": {
+          "express": "^4.18.2",
+          "express-rate-limit": "^7.1.5",
+          "node-fetch": "^2.7.0"
+    }
+}
