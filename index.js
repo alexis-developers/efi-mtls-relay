@@ -4,6 +4,7 @@ const fetch = require("node-fetch");
 const rateLimit = require("express-rate-limit");
 
 const app = express();
+app.set("trust proxy", 1);
 app.use(express.json());
 
 const HMAC_SECRET       = process.env.HMAC_SECRET;
