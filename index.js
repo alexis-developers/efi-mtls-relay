@@ -22,7 +22,7 @@ function getMtlsAgent() {
     _agent = new https.Agent({
       cert: Buffer.from(EFI_CERT_PEM, "base64"),
       key:  Buffer.from(EFI_KEY_PEM,  "base64"),
-      rejectUnauthorized: false,
+      rejectUnauthorized: true,
     });
   }
   return _agent;
